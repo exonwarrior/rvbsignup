@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="style.css" />
   
     <%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@page import="java.util.*"%>
+    <%@page import="java.util.*, servlets.RegisterServlet"%>
     <head>
         <meta content="en-us" http-equiv="Content-Language" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -25,7 +25,7 @@
             else if(!nameReg.test(lastName)){
                 alert("name must be between 2 and 16 a-z charaters");
             }
-            else if(pass1 != pass2){
+            else if(pass1 !== pass2){
                 alert("passwords do not match");     
             }
             else if(!passwordReg.test(pass1)){

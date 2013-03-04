@@ -4,3 +4,6 @@
 *.jar
 *.war
 *.ear
+/RvBSignup/nbproject/private/
+/RvBSignup/dist/
+/RvBSignup/build/
